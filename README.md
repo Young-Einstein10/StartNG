@@ -1,1 +1,2 @@
-# StartNG
+# flutterwave url: 
+# lucid blog url: 
