@@ -1,32 +1,36 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;  
   letter-spacing: 1px;
+  line-height: 1.7;
+  /* font-weight: 200; */
 }
 
 main {
   background: #EEE;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(60, 64, 67, .3);
   width: 80%;
-  margin: 0px auto;
+  margin: 10px auto;
   padding: 0 25px;
   text-align: justify;
 }
 
 header, section {
-  margin: 10px 0;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 /* Headings */
 h2 {
-  color: #15abd8;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h4 {
+section h4 {
+  font-size: 12px;
   margin: 10px 0;
+  color: #2079c7;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Header Section */
@@ -34,14 +38,17 @@ header {
   text-align: center;
 }
 
+header p a {
+  text-decoration: none;
+  color: #2079c7;
+}
+
 header h2 ~ p {
   margin: 5px 0;
 }
 
 /* Objective Section */
-/* section#objective {
-
-} */
+/*  */
 
 /* Educational Quailification Section */
 section#edu .container {
@@ -49,6 +56,7 @@ section#edu .container {
 }
 
 section#edu .container ul, section#work-experience ul, section#skills ul {
+  margin: 15px;
   padding-left: 35px;
 }
 
@@ -59,4 +67,17 @@ section img {
   height: 400px;
   display: block;
   margin: 0 auto;
+}
+/* Experience Section */
+section#work-experience .work p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+section#work-experience ul li {
+  margin: 10px 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
 }
