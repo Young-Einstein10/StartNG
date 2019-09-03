@@ -15,6 +15,10 @@
         <p><a href="mailto:aabdulrahmanyusuf@gmail.com" target="_blank">aabdulrahmanyusuf@gmail.com</a></p>
         <p>08139051320, 07050569070</p>
     </header>
+
+    <section id="img">
+      <img src="https://res.cloudinary.com/young-einstein/image/upload/v1567518168/passport_cjsegl.jpg" alt="img" />
+    </section>
     
     <section id="objective">
       <h4><u>PROFESSIONAL OBJECTIVE</u></h4>
@@ -97,10 +101,31 @@
       <p>Available on request</p>
     </section>
 
-    <section>
-      <img src="https://res.cloudinary.com/young-einstein/image/upload/v1566579037/screen2_idqsgx.png" alt="img" />
+    <section id="contact">
+      <form action="" class="form">
+        <h3><u>Contact Me</u></h3>
+        <div class="name email"> 
+          <input type="text" placeholder="Name" id="name" minlength="4">
+          <input type="email" placeholder="user@example.com" id="email">
+        </div>
+
+        <div class="title">
+          <input type="text" placeholder="Title" id="title">
+        </div>
+
+        <div class="message">
+          <textarea placeholder="Enter your message" id="message" cols="40" rows="5" minlength="20"></textarea>
+        </div>
+
+        <div class="btn">
+          <button type="submit" id="btn">Send</button>
+        </div>
+
+        <div class="alert-message"></div>
+      </form>
     </section>
   </main>
 
+  <script src="app.js"></script>
 </body>
 </html>

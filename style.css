@@ -35,16 +35,21 @@ section h4 {
 
 /* Header Section */
 header {
-  text-align: center;
+  display: inline;
+  max-width: 600px;
 }
 
 header p a {
   text-decoration: none;
   color: #2079c7;
+  max-width: 600px;
+
 }
 
 header h2 ~ p {
   margin: 5px 0;
+  max-width: 600px;
+
 }
 
 /* Objective Section */
@@ -60,13 +65,18 @@ section#edu .container ul, section#work-experience ul, section#skills ul {
   padding-left: 35px;
 }
 
+section#img {
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 160px;
+  display: inline;
+
+}
+
 section img {
-  margin: 30px 0;
-  max-width: 560px;
-  width: 100%;
-  height: 400px;
-  display: block;
-  margin: 0 auto;
+  width: 130px;
+  height: 180px;
 }
 /* Experience Section */
 section#work-experience .work p {
@@ -80,4 +90,55 @@ section#work-experience ul li {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
   font-weight: 200;
+}
+
+/* Contact Section */
+form h3 {
+  font-size: 20px;
+  font-weight: 100;
+  color: #2079c7;
+  text-align: left;
+  margin: 15px 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+form .title, form .message {
+  margin: 12px 0;
+  max-width: 600px;
+}
+
+form .name {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  width: 100%;
+}
+
+
+form .name input {
+  width: 48%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 0;
+}
+
+form .title input, form .message textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 0;
+  color: black;
+}
+
+form div #btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 0;
+  color: white;
+  background: #2079c7;
+}
+
+.alert {
+  color: red;
 }
