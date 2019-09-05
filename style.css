@@ -7,6 +7,10 @@
   /* font-weight: 200; */
 }
 
+hr {
+  border: .5px solid blue;
+}
+
 main {
   background: #EEE;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -18,7 +22,11 @@ main {
   text-align: justify;
 }
 
-header, section {
+header {
+  padding-top: 15px;
+}
+
+section {
   padding: 20px 0;
 }
 /* Headings */
@@ -68,7 +76,7 @@ section#edu .container ul, section#work-experience ul, section#skills ul {
 section#img {
   padding: 0;
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 160px;
   display: inline;
 
@@ -76,7 +84,7 @@ section#img {
 
 section img {
   width: 130px;
-  height: 180px;
+  height: 170px;
 }
 /* Experience Section */
 section#work-experience .work p {
@@ -142,3 +150,27 @@ form div #btn {
 .alert {
   color: red;
 }
+
+@media only screen and (max-width: 500px) {
+  section#img, section img {
+    display: none;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  pre {
+    display: none;
+  }
+
+   section#img, section img {
+    display: none;
+  }
+
+  header {
+    text-align: center;
+  }
+} 
