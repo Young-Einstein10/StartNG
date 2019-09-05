@@ -1,28 +1,59 @@
+function validateForm() {  
+  const name = document.querySelector('#name');
+  const email = document.querySelector('#email');
+  const title = document.querySelector('#title');
+  const message = document.querySelector('#message');
 
-function validateForm () {
-  var name = document.querySelector('#name');
-  var email = document.querySelector('#email');
-  var title = document.querySelector('#title');
-  var message = document.querySelector('#message');
 
-  if (name.value < 4) {
-    window.alert('Name: Please enter at least 4 characters.')
-    name.focus()
-    return false
+  if (name.value == '') {
+    alertMsg();
+    name.focus();
+    setTimeout(() => {
+      document.querySelector('.alert').remove();
+    }, 3000);
+
+    return false;
   }
 
   if (email.value == '') {
-    window.alert('E-mail: Please enter a valid e-mail address.')
-    email.focus()
-    return false
+    alertMsg();
+    email.focus();
+    setTimeout(() => {
+      document.querySelector('.alert').remove();
+    }, 3000);
+
+    return false;
   }
 
 
   if (title.value == '') {
-    window.alert('Please enter a title.')
-    title.focus()
+    alertMsg();
+    title.focus();
+    setTimeout(() => {
+      document.querySelector('.alert').remove();
+    }, 3000);
+
     return false
   }
 
-  return true
+  if (message.value == '') {
+    alertMsg();
+    message.focus();
+    setTimeout(() => {
+      document.querySelector('.alert').remove();
+    }, 3000);
+
+    return false;
+  }
+
+  alert('Your message has been sent')
+
+  return true; 
 }
+
+function alertMsg () {
+  const nameAlert = document.querySelector('.name-alert');
+  nameAlert.innerHTML = `<p class="alert">Pls Fill in all Fields</p>`;
+}
+
+
